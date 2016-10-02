@@ -7,7 +7,7 @@ Rails.application.routes.draw do
     resources :comments
   end
 
-  resources :users, only: [:new, :create]
+  resources :users, only: [:new, :create, :show]
   # resources :users, only: [:new, :create, :edit, :update, :show]
 
   get '/login', to: 'sessions#new'
