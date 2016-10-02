@@ -28,6 +28,6 @@ class PostsController < ApplicationController
 
 	def post_params
 		# binding.pry
-		params.require(:post).permit(:title, :content)
+		params.require(:post).permit(:title, :content, category_ids: [])
 	end
 end
