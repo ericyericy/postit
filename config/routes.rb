@@ -3,8 +3,16 @@ Rails.application.routes.draw do
   # See how all your routes lay out with "rake routes".
   root "posts#index"
 
-  resources :posts do
-    resources :comments
+  resources :posts, except: [:destroy] do
+    member do
+      post :vote
+    end    
+
+    resources :comments, only: [:create, :show] do
+      member do
+        post :vote
+      end
+    end  
   end
 
   resources :users, only: [:new, :create, :show]
