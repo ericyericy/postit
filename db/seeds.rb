@@ -40,9 +40,8 @@ Post.create!([
   {title: "new ddd", content: "dddff", user_id: 1}
 ])
 User.create!([
-  {name: "eric", email: "eric@ntu.edu.tw", password_digest: "$2a$10$Tir1t8BwMjbEMUWA.Pz7IuAbgRPJH5OgPYhdM4PtTBjsWVw5vcFp2"},
-  {name: "bob", email: "bob@ntu.edu.tw", password_digest: "$2a$10$4H5Y4IhUlDTpBEg2rvvULOaEVOwBa9HkznkW1xVbnVysY6.unKJwq"},
-  {name: "jay", email: nil, password_digest: "$2a$10$vJCazC4/S06ajM.g92Pr1OB.8DtVTulfx2Oj1D.RpzRJhiWrs21.y"}
+  {name: "jay", email: nil, password_digest: "$2a$10$w7txeVBJvsfQ/uA2Nu0DXOTLkUVxz.E3eXIBGVycp1RWLEA7d3Vx2"},
+  {name: "eric", email: nil, password_digest: "$2a$10$pBBtgRSKvDQS7BKEDtk38OZ6LzJAMI6m5VVQ7MxlPoi98XSGIxEGq"}
 ])
 Vote.create!([
   {vote: true, user_id: 7, voteable_id: 1, voteable_type: "Post"},
