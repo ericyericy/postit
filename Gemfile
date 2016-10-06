@@ -41,6 +41,7 @@ group :development, :test do
 	gem 'pry'
 	gem 'awesome_print'
 	gem 'bootstrap-sass'	
+  gem 'seed_dump'  
 end
 
 group :development do
@@ -51,7 +52,7 @@ group :development do
   gem 'spring'
 end
 
-# group :production do
-# 	gem 'pg'
-# 	gem 'rails_12factor'
-# end
+group :production do
+	gem 'pg'
+	gem 'rails_12factor'
+end
