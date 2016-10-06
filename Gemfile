@@ -21,6 +21,7 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
+gem 'bootstrap-sass'  
 
 
 
@@ -40,7 +41,6 @@ group :development, :test do
 	gem 'sqlite3'  
 	gem 'pry'
 	gem 'awesome_print'
-	gem 'bootstrap-sass'	
   gem 'seed_dump'  
 end
 
